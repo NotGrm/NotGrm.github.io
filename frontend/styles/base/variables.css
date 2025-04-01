@@ -1,0 +1,21 @@
+:root {
+  --lapis-lazuli: hsla(203, 46%, 33%, 1);
+  --jonquil: hsla(50, 94%, 49%, 1);
+  --antiflash-white: hsla(0, 0%, 92%, 1);
+  --battleship-gray: hsla(30, 1%, 52%, 1);
+  --eerie-black: hsla(36, 8%, 12%, 1);
+
+  --color-primary: var(--lapis-lazuli);
+  --color-secondary: var(--jonquil);
+  --color-dark: var(--eerie-black);
+  --color-mid: var(--battleship-gray);
+  --color-light: var(--antiflash-white);
+
+  --stroke-width: 1px;
+  --stroke: var(--stroke-width) dashed var(--color-mid);
+  --stroke-solid: var(--stroke-width) solid var(--color-mid);
+
+  --radius-s: 0.2rem;
+  --radius-m: 0.75rem;
+  --radius-l: 2.5rem;
+}
