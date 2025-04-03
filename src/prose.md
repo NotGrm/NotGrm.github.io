@@ -3,7 +3,7 @@ layout: default
 title: Homepage
 ---
 
-<article class="prose wrapper flow">
+<article class="prose center stack">
   <h1>Prose content and global styles kitchen sink</h1>
   <p>We start with a paragraph of text that features various HTML tags, used in flow content. Account for <em>emphasis</em>, <strong>strong</strong> and <small>small</small> text. Don’t forget to account for abbreviations too, using the <abbr title="abbreviation">abbr</abbr> (<code>&lt;abbr&gt;</code>) element. Lastly you can define <del>deleted text</del>
     <ins>inserted text</ins>.</p>

@@ -5,11 +5,11 @@
   </head>
   <body class="<%= data.layout %> <%= data.page_class %> font-sans antialiased leading-normal tracking-wider bg-cover" data-controller="daynight">
    	<!-- Pin to top right corner -->
-	  <div class="absolute top-0 right-0 h-12 w-18 p-4">
+	  <div>
 			<button class="focus:outline-none" data-action="daynight#switch">🌙</button>
 	  </div>
 
-    <main>
+    <main class="center">
       <%= yield %>
     </main>
 
