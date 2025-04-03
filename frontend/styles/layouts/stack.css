@@ -11,3 +11,7 @@
 .stack > * + * {
   margin-block-start: var(--stack-space, 1.5rem);
 }
+
+.stack[data-stack-space="small"] {
+  --stack-space: var(--size-3);
+}

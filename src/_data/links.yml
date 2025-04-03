@@ -1,0 +1,21 @@
+- name: TheBlog
+  title: Where I write stuff about programming in french
+  url: https://blog.notgrm.dev
+- name: Mastodon
+  title: Where I do tech watch and share my thoughts
+  url: https://ruby.social/notgrm
+- name: GitHub
+  title: Where I publish my code
+  url: https://github.com/notgrm
+- name: LinkedIn
+  title: Where I shitpost for the Klout fame
+  url: https://www.linkedin.com/in/bertrandjeremy
+- name: Hardcover
+  title: Where I gather my readings
+  url: https://hardcover.app/@Notgrm
+- name: Pixelfed
+  title: Where I share my photos
+  url: https://pixelfed.fr/notgrm
+- name: Dev.to
+  title: Where I write stuff about programming in english
+  url: https://dev.to/notgrm

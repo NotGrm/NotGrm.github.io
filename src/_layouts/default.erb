@@ -9,8 +9,18 @@
 			<button class="focus:outline-none" data-action="daynight#switch">🌙</button>
 	  </div>
 
-    <main class="center">
-      <%= yield %>
+    <main class="center main">
+      <article><%= yield %></article>
+
+      <hr>
+
+      <aside class="stack center" data-stack-space="small" data-center-with-text="true">
+        <h2>You can find me on</h2>
+
+        <div class="cluster" data-align="center" role="list">
+          <%= render "links", links: site.data.links %>
+        </div>
+      </aside>
     </main>
 
     <%= render "footer", metadata: site.metadata %>

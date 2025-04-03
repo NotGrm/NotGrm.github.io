@@ -5,4 +5,5 @@
 @import "base/global-styles";
 
 @import "layouts/center";
+@import "layouts/cluster";
 @import "layouts/stack";
