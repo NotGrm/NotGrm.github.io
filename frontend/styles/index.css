@@ -6,4 +6,5 @@
 
 @import "layouts/center";
 @import "layouts/cluster";
+@import "layouts/cover";
 @import "layouts/stack";

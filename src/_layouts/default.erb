@@ -3,26 +3,25 @@
   <head>
     <%= render "head", metadata: site.metadata, title: data.title %>
   </head>
-  <body class="<%= data.layout %> <%= data.page_class %> font-sans antialiased leading-normal tracking-wider bg-cover" data-controller="daynight">
-   	<!-- Pin to top right corner -->
-	  <div>
-			<button class="focus:outline-none" data-action="daynight#switch">🌙</button>
-	  </div>
+  <body class="<%= data.layout %> <%= data.page_class %>" data-controller="daynight">
+    <div class="cover">
+      <%= render "header" %>
 
-    <main class="center main">
-      <article><%= yield %></article>
+      <main>
+        <article class="center"><%= yield %></article>
 
-      <hr>
+        <hr>
 
-      <aside class="stack center" data-stack-space="small" data-center-with-text="true">
-        <h2>You can find me on</h2>
+        <aside class="stack center" data-stack-space="small" data-center-with-text="true">
+          <h2>You can find me on</h2>
 
-        <div class="cluster" data-align="center" role="list">
-          <%= render "links", links: site.data.links %>
-        </div>
-      </aside>
-    </main>
+          <div class="cluster" data-align="center" role="list">
+            <%= render "links", links: site.data.links %>
+          </div>
+        </aside>
+      </main>
 
-    <%= render "footer", metadata: site.metadata %>
+      <%= render "footer", metadata: site.metadata %>
+    </div>
   </body>
 </html>
