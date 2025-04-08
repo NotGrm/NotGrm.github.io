@@ -1787,6 +1787,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"open-props@npm:^1.7.14":
+  version: 1.7.14
+  resolution: "open-props@npm:1.7.14"
+  checksum: 10c0/9ac359e136533dbd57d70b1e195dbad9c3ffff9b39244ca54221beb0f98250af96587420ff24ac6c177c39a25accda2d927596076991086bf9bb977798fc1c7b
+  languageName: node
+  linkType: hard
+
 "p-map@npm:^7.0.2":
   version: 7.0.3
   resolution: "p-map@npm:7.0.3"
@@ -2629,6 +2636,7 @@ __metadata:
     autoprefixer: "npm:^10.4.21"
     esbuild: "npm:^0.19.2"
     glob: "npm:^10.3.3"
+    open-props: "npm:^1.7.14"
     postcss: "npm:^8.5.3"
     postcss-flexbugs-fixes: "npm:^5.0.2"
     postcss-import: "npm:^15.1.0"

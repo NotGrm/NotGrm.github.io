@@ -1,12 +1,18 @@
-/* If you need to add @import statements, do so up here */
+@import "open-props/open-props.min.css";
 
-@import "jit-refresh.css"; /* triggers frontend rebuilds */
+@import "base/reset";
+@import "base/variables";
+@import "base/global-styles";
 
-/* Set up Tailwind imports */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "layouts/center";
+@import "layouts/cluster";
+@import "layouts/cover";
+@import "layouts/frame";
+@import "layouts/icon";
+@import "layouts/sidebar";
+@import "layouts/stack";
 
-.index {
-  background-image: url(/images/background.jpg);
-}
+
+@import "blocks/headline";
+@import "blocks/site-foot";
+@import "blocks/site-head";

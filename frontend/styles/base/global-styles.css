@@ -1,0 +1,365 @@
+/*
+  Global styles
+
+  Low-specificity, global styles that apply to the whole
+  project: https://cube.fyi/css.html
+*/
+body {
+  background: var(--color-light);
+  color: var(--color-dark);
+  font-size: var(--font-size-fluid-1);
+  font-family: var(--font-slab-serif);
+  line-height: var(--font-lineheight-2);
+  font-size-adjust: from-font;
+  margin: 0;
+}
+
+:is(h1, h2, h3, h4) {
+  line-height: var(--font-lineheight-1);
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: var(--font-size-fluid-3);
+  max-width: var(--size-content-1);
+}
+
+h2 {
+  font-size: var(--font-size-fluid-2);
+  max-width: var(--size-content-2);
+}
+
+h3 {
+  font-size: var(--font-size-fluid-2);
+  max-width: var(--size-content-2);
+}
+
+:is(h4, h5, h6) {
+  font-size: var(--font-size-fluid-1);
+}
+
+small {
+  font-size: var(--font-size-0);
+}
+
+ins {
+  text-decoration: none;
+  background: var(--color-primary);
+  color: var(--color-light);
+  padding-inline: 0.3em;
+}
+
+:is(code, kbd, samp) {
+  font-family: var(--font-monospace-code);
+  padding: 0.2em 0.2em 0.05em 0.2em;
+  hyphens: none;
+  tab-size: 2;
+  text-align: left;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  box-decoration-break: clone;
+}
+
+/* This is quite a new property, so we want code styles to at least, not be huge or tiny */
+@supports not (font-size-adjust: from-font) {
+  :is(code, kbd, samp) {
+    font-size: 0.8em;
+  }
+}
+
+pre:has(code) {
+  width: max-content;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+pre code {
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+kbd {
+  border: 1px solid;
+  padding-block-end: 0.1em;
+}
+
+var {
+  font-style: normal;
+  font-weight: var(--font-weight-5);
+}
+
+q {
+  font-style: italic;
+}
+
+ul:not([class]) {
+  padding-inline-start: 1.7ch;
+  list-style-type: disc;
+}
+
+ul:not([class]) > li {
+  padding-inline-start: var(--size-fluid-1);
+}
+
+:is(ol, ul):not([class]) li + * {
+  margin-block-start: var(--flow-space, var(--size-fluid-1));
+}
+
+ul ::marker {
+  font-size: 0.8lh;
+}
+
+ol ::marker {
+  font-size: 1em;
+  font-weight: var(--font-weight-7);
+}
+
+/* Lists with classes and roles will be out of standard flow, so remove the default spacing */
+[role='list'][class],
+[role='tablist'][class] {
+  margin-block: 0;
+  padding: 0;
+}
+
+dt {
+  font-weight: var(--font-weight-5);
+}
+
+dt + dd {
+  margin-block-start: var(--size-fluid-1);
+}
+
+dd + dt {
+  margin-block-start: var(--size-fluid-2);
+}
+
+dd {
+  margin-inline-start: 1.5ch;
+}
+
+blockquote {
+  margin-inline: 0;
+  color: var(--color-dark);
+}
+
+blockquote footer {
+  margin-block-start: var(--size-fluid-2);
+  color: var(--color-primary);
+  font-size: var(--font-size-fluid-0);
+}
+
+blockquote q {
+  font-style: normal;
+}
+
+:is(video, iframe[src*='youtube'], iframe[src*='vimeo']) {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
+
+figcaption {
+  padding-block-start: 0.5em;
+  font-size: var(--font-size-fluid-0);
+  font-family: monospace;
+}
+
+table {
+  border: var(--stroke);
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  text-align: left;
+  font-weight: var(--font-weight-7);
+  line-height: var(--font-lineheight-1);
+}
+
+thead th {
+  padding-block: var(--size-fluid-2);
+}
+
+td,
+th {
+  padding: var(--size-fluid-1) var(--size-fluid-2);
+}
+
+th:not(:only-of-type) {
+  border-block-end: var(--stroke);
+}
+
+th:only-of-type {
+  border-inline-end: var(--stroke);
+}
+
+:is(th, td) ~ :is(th, td) {
+  border-inline-start: var(--stroke);
+}
+
+tr + tr :is(th, td) {
+  border-block-start: var(--stroke);
+}
+
+caption {
+  caption-side: bottom;
+  margin-block-start: var(--size-fluid-2);
+}
+
+a:not([class]) {
+  text-decoration-color: var(--color-primary);
+  text-decoration-thickness: 0.075lh;
+}
+
+a:not([class]):hover {
+  text-underline-offset: 0.2lh;
+}
+
+:is(h1, h2, h3, h4) a:not([class]) {
+  text-decoration-thickness: 0.1ex;
+  text-underline-offset: 0.2ex;
+}
+
+:is(h1, h2, h3, h4) a:not([class]):hover {
+  text-underline-offset: 0.3ex;
+}
+
+:focus {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus-color, currentColor);
+  outline-offset: var(--focus-offset, 0.2lh);
+}
+
+/*
+Firefox is the only browser that doesn't outline the whole element unless you
+make it display: inline-block. That in itself causes multiple flow issues so we
+can detect it, using its own vendor prefix and reduce focus offset
+*/
+@supports (-moz-appearance: none) {
+  :root {
+    --focus-offset: 0.08em;
+  }
+}
+
+:target {
+  scroll-margin-block: 5lh;
+}
+
+::selection {
+  color: var(--color-light);
+  background: var(--color-dark);
+}
+
+hr {
+  border: none;
+  border-block-start: var(--hr-stroke, var(--stroke));
+  margin-block: var(--flow-space, var(--size-fluid-4));
+}
+
+svg:not([class]) {
+  width: auto;
+  height: 1lh;
+}
+
+svg {
+  flex-shrink: 0;
+}
+
+svg[role='img'][width][height] {
+  width: revert;
+  height: revert;
+  color: var(--color-light);
+  background: var(--color-dark);
+  padding: var(--size-fluid-1);
+}
+
+/* There's a .flow composition, but this prevents forms from having to have that applied where markup is harder to control in certain systems. It still uses the --flow-space variables though to make managing space easier */
+form > * + * {
+  margin-top: var(--flow-space, 1rem);
+}
+
+:is(input, select, textarea) {
+  accent-color: var(--color-primary);
+}
+
+:is(input:not([type='checkbox'], [type='radio'], [type='color']), select, textarea) {
+  padding: 0.5em 0.8em;
+  border-radius: var(--radius-s);
+  border: var(--stroke-solid);
+  background: var(--color-light);
+  filter: brightness(1.5);
+  color: var(--color-dark);
+  width: 100%;
+
+  &::placeholder {
+    color: var(--color-mid);
+    opacity: 1;
+  }
+}
+
+label {
+  line-height: var(--font-lineheight-1);
+  font-weight: var(--font-weight-5);
+}
+
+label::after {
+  content: '\A';
+  white-space: pre;
+}
+
+/* Usually label wraps checkbox and radio buttons, so we give ourselves more layout and text-flow control with flex */
+label:has(input) {
+  display: flex;
+  align-items: baseline;
+  gap: var(--size-fluid-1);
+  font-weight: var(--font-weight-4);
+}
+
+label:has(input) + label:has(input) {
+  --flow-space: var(--size-fluid-2);
+}
+
+/* Slightly adjusts the vertical position of the check/radio */
+label:has(input) input {
+  transform: translateY(-0.1ex);
+}
+
+input:disabled {
+  background: var(--color-mid);
+}
+
+input:disabled,
+label input:disabled + * {
+  cursor: not-allowed;
+}
+
+fieldset {
+  border: var(--stroke);
+  padding: var(--size-fluid-2);
+}
+
+legend {
+  font-weight: var(--font-weight-5);
+  padding-inline: var(--size-fluid-1);
+}
+
+summary {
+  font-weight: var(--font-weight-7);
+  cursor: pointer;
+}
+
+details[open] summary {
+  margin-block-end: var(--size-fluid-2);
+}

@@ -1,0 +1,6 @@
+.site-foot {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  padding-block: var(--size-2);
+  font-size: var(--font-size-fluid-0);
+}

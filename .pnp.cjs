@@ -30,6 +30,7 @@ const RAW_RUNTIME_STATE =
           ["autoprefixer", "virtual:572974bfd16fba63746e564b946fcd0d5481e3958a2d86b2339f8f9624fc9f4abd3898c4444c731638d6001d3f88ca414f2c05308d6789925602f170e2d31abc#npm:10.4.21"],\
           ["esbuild", "npm:0.19.12"],\
           ["glob", "npm:10.4.5"],\
+          ["open-props", "npm:1.7.14"],\
           ["postcss", "npm:8.5.3"],\
           ["postcss-flexbugs-fixes", "virtual:572974bfd16fba63746e564b946fcd0d5481e3958a2d86b2339f8f9624fc9f4abd3898c4444c731638d6001d3f88ca414f2c05308d6789925602f170e2d31abc#npm:5.0.2"],\
           ["postcss-import", "virtual:403059edc194f8eee9f9b8f9ab634e67126b182288b0cf3b56c13ed0ebaeda2fb24025b868e17fbbf02f6cd6a0b5ab93ce2bfe51d215138ea74d0736d87896c8#npm:15.1.0"],\
@@ -2488,6 +2489,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["open-props", [\
+      ["npm:1.7.14", {\
+        "packageLocation": "../../../.yarn/berry/cache/open-props-npm-1.7.14-e3b8c9008f-10c0.zip/node_modules/open-props/",\
+        "packageDependencies": [\
+          ["open-props", "npm:1.7.14"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["p-map", [\
       ["npm:7.0.3", {\
         "packageLocation": "../../../.yarn/berry/cache/p-map-npm-7.0.3-93bbec0d8c-10c0.zip/node_modules/p-map/",\
@@ -3739,6 +3749,7 @@ const RAW_RUNTIME_STATE =
           ["autoprefixer", "virtual:572974bfd16fba63746e564b946fcd0d5481e3958a2d86b2339f8f9624fc9f4abd3898c4444c731638d6001d3f88ca414f2c05308d6789925602f170e2d31abc#npm:10.4.21"],\
           ["esbuild", "npm:0.19.12"],\
           ["glob", "npm:10.4.5"],\
+          ["open-props", "npm:1.7.14"],\
           ["postcss", "npm:8.5.3"],\
           ["postcss-flexbugs-fixes", "virtual:572974bfd16fba63746e564b946fcd0d5481e3958a2d86b2339f8f9624fc9f4abd3898c4444c731638d6001d3f88ca414f2c05308d6789925602f170e2d31abc#npm:5.0.2"],\
           ["postcss-import", "virtual:403059edc194f8eee9f9b8f9ab634e67126b182288b0cf3b56c13ed0ebaeda2fb24025b868e17fbbf02f6cd6a0b5ab93ce2bfe51d215138ea74d0736d87896c8#npm:15.1.0"],\

@@ -1,0 +1,23 @@
+.headline {
+  align-items: center;
+}
+
+.headline__meta {
+  color: var(--color-mid);
+  font-size: var(--font-size-fluid-1);
+}
+
+.headline__heading {
+  line-height: var(--font-lineheight-00);
+}
+
+.headline__meta > svg {
+  color: var(--color-primary);
+  fill: currentColor;
+}
+
+.headline__picture {
+  inline-size: var(--size-14);
+  border: var(--color-mid) var(--border-size-4) solid;
+  border-radius: var(--radius-drawn-3);
+}
