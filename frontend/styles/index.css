@@ -11,3 +11,5 @@
 @import "layouts/icon";
 @import "layouts/sidebar";
 @import "layouts/stack";
+
+@import "blocks/site-foot";
