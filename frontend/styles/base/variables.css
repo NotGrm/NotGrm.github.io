@@ -1,7 +1,7 @@
 :root {
-  --jonquil: hsla(50, 94%, 49%, 1);
   --antiflash-white: hsla(0, 0%, 92%, 1);
   --battleship-gray: hsla(30, 1%, 52%, 1);
+  --davys-gray: hsla(30, 2%, 34%, 1);
   --eerie-black: hsla(36, 8%, 12%, 1);
   --gamboge: hsla(40, 94%, 49%, 1);
   --majorelle-blue: hsla(244, 86%, 64%, 1);
@@ -9,7 +9,7 @@
   --color-primary: var(--majorelle-blue);
   --color-secondary: var(--gamboge);
   --color-dark: var(--eerie-black);
-  --color-mid: var(--battleship-gray);
+  --color-mid: var(--davys-gray);
   --color-light: var(--antiflash-white);
 
   --stroke-width: 1px;

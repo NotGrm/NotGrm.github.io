@@ -12,4 +12,7 @@
 @import "layouts/sidebar";
 @import "layouts/stack";
 
+
+@import "blocks/headline";
 @import "blocks/site-foot";
+@import "blocks/site-head";
