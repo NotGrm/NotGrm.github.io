@@ -11,11 +11,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: enable corepack and set yarn version to latest stable
-        run: |
-          corepack enable
-          yarn set version stable
-
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
@@ -25,8 +20,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "22"
-          cache: "yarn"
-      - run: yarn install
+          cache: "npm"
+      - run: npm ci
 
       - name: Build
         env:
