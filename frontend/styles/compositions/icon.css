@@ -8,8 +8,5 @@
 .with-icon {
   display: inline-flex;
   align-items: baseline;
-}
-
-.with-icon .icon {
-  margin-inline-end: 0.5rem;
+  gap: var(--space-2xs);
 }

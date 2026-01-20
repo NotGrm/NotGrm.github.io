@@ -1,6 +1,14 @@
 .site-foot {
-  background-color: var(--color-dark);
-  color: var(--color-light);
-  padding-block: var(--size-2);
-  font-size: var(--font-size-fluid-0);
+  background-color: var(--color-text);
+  color: var(--color-bg);
+  padding-block: var(--space-2xs);
+  font-size: var(--step--1);
+}
+
+.site-foot a {
+  color: var(--color-bg);
+}
+
+.site-foot a:hover {
+    text-decoration-color: var(--color-primary);
 }

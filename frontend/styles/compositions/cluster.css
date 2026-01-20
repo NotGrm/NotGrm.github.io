@@ -1,0 +1,9 @@
+/* Cluster composition exceptions */
+
+:is(.cluster)[data-align="end"] {
+  justify-content: flex-end;
+}
+
+:is(.cluster)[data-align="center"] {
+  justify-content: center;
+}

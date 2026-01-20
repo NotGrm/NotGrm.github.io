@@ -1,5 +1,5 @@
 .site-head {
-  padding-block: var(--size-2);
-  padding-inline: var(--size-2);
-  font-size: var(--font-size-fluid-0);
+  padding-block: var(--space-2xs);
+  padding-inline: var(--space-2xs);
+  font-size: var(--step--1);
 }

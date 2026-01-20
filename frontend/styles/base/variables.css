@@ -1,4 +1,8 @@
 :root {
+  /* Typography scale override - production uses 24px base (forced rebuild) */
+  --step-0: clamp(1.25rem, calc(1.14rem + 0.54vw), 1.5rem);
+
+  /* Named colors */
   --antiflash-white: hsla(0, 0%, 92%, 1);
   --battleship-gray: hsla(30, 1%, 52%, 1);
   --davys-gray: hsla(30, 2%, 34%, 1);
@@ -6,17 +10,46 @@
   --gamboge: hsla(40, 94%, 49%, 1);
   --majorelle-blue: hsla(244, 86%, 64%, 1);
 
+  /* cu.css theme token overrides */
+  --font-base: 'Rockwell', 'Rockwell Nova', 'Roboto Slab', 'DejaVu Serif', serif;
+  --font-display: var(--font-base);
+  --font-accent: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, monospace;
+
+  --color-text: var(--eerie-black);
+  --color-text-mod-1: var(--davys-gray);
+  --color-text-mod-2: var(--battleship-gray);
+  --color-bg: var(--antiflash-white);
+  --color-bg-mod-1: hsla(0, 0%, 95%, 1);
+  --color-bg-mod-2: hsla(0, 0%, 88%, 1);
+  --color-border: var(--davys-gray);
+  --color-brand: var(--majorelle-blue);
+  --color-accent: var(--gamboge);
+  --color-highlight: hsla(40, 94%, 85%, 1);
+
+  --border-radius: 0.2rem;
+  --shadow: none;
+
+  /* Layout overrides */
+  --wrapper-max-width: 65ch;
+
+  /* Legacy semantic aliases (for backward compatibility) */
   --color-primary: var(--majorelle-blue);
   --color-secondary: var(--gamboge);
   --color-dark: var(--eerie-black);
   --color-mid: var(--davys-gray);
   --color-light: var(--antiflash-white);
 
+  /* Custom stroke styles */
   --stroke-width: 1px;
   --stroke: var(--stroke-width) dashed var(--color-mid);
   --stroke-solid: var(--stroke-width) solid var(--color-mid);
 
+  /* Legacy radius aliases */
   --radius-s: 0.2rem;
   --radius-m: 0.75rem;
   --radius-l: 2.5rem;
+
+  /* Drawn border radius from Open Props */
+  --radius-drawn-1: 255px 15px 225px 15px/15px 225px 15px 255px;
+  --radius-drawn-2: 125px 10px 20px 185px/25px 205px 205px 25px;
 }

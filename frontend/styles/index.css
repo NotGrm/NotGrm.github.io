@@ -1,18 +1,20 @@
-@import "open-props/open-props.min.css";
+/* cu.css foundation (includes reset, global styles, compositions, utilities) */
+@import "cu.css";
 
-@import "base/reset";
-@import "base/variables";
-@import "base/global-styles";
+/* Theme customizations (overrides cu.css defaults) */
+@import "base/variables.css";
+@import "base/global-styles.css";
 
-@import "layouts/center";
-@import "layouts/cluster";
-@import "layouts/cover";
-@import "layouts/frame";
-@import "layouts/icon";
-@import "layouts/sidebar";
-@import "layouts/stack";
+/* Compositions not in cu.css */
+@import "compositions/cluster.css";
+@import "compositions/cover.css";
+@import "compositions/frame.css";
+@import "compositions/icon.css";
 
+/* Blocks (site-specific components) */
+@import "blocks/headline.css";
+@import "blocks/site-head.css";
+@import "blocks/site-foot.css";
 
-@import "blocks/headline";
-@import "blocks/site-foot";
-@import "blocks/site-head";
+/* Syntax highlighting for code blocks */
+@import "syntax-highlighting.css";

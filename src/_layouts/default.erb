@@ -7,8 +7,8 @@
     <div class="cover">
       <%= render "header" %>
 
-      <main>
-        <header class="headline center sidebar">
+      <main class="flow">
+        <header class="headline wrapper sidebar" data-direction="rtl">
           <hgroup>
             <h1 class="headline__heading">It's-a-me, Jeremy!</h1>
             <div class="cluster">
@@ -45,14 +45,14 @@
           </div>
         </header>
 
-        <article class="center"><%= yield %></article>
+        <article class="wrapper"><%= yield %></article>
 
         <hr>
 
-        <aside class="stack center" data-stack-space="small" data-center-with-text="true">
+        <aside class="flow wrapper text-center">
           <h2>You can find me on</h2>
 
-          <div class="cluster" data-align="center" role="list">
+          <div class="cluster" role="list" data-align="center">
             <%= render "links", links: site.data.links %>
           </div>
         </aside>
