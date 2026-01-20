@@ -1,4 +1,8 @@
-const build = require("./config/esbuild.defaults.js")
+import build from "./config/esbuild.defaults.js"
+import path from "path"
+import { fileURLToPath } from "url"
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 // You can customize this as you wish, perhaps to add new esbuild plugins.
 //
@@ -37,7 +41,8 @@ const esbuildOptions = {
   ],
   globOptions: {
     excludeFilter: /\.(dsd|lit)\.css$/
-  }
+  },
+  nodePaths: [path.join(__dirname, "node_modules")]
 }
 
 build(esbuildOptions)
