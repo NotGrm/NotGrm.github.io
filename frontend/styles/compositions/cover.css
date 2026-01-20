@@ -6,7 +6,7 @@
 }
 
 .cover > * {
-  margin-block: 1rem;
+  margin-block: var(--space-s);
 }
 
 .cover > :first-child:not(main) {
